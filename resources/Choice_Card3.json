@@ -1,0 +1,52 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "id": "CompactSelectVal",
+            "label": "What is your current functional area?",
+            "style": "compact",
+            "isRequired": true,
+            "errorMessage": "This is a required input",
+            "placeholder": "Please choose",
+            "choices": [
+                {
+                    "title": "Operations",
+                    "value": "1"
+                },
+                {
+                    "title": "Business Head",
+                    "value": "2"
+                },
+                {
+                    "title": "Human Resource",
+                    "value": "3"
+                },
+                {
+                    "title": "Information Technology",
+                    "value": "4"
+                },
+                {
+                    "title": "Marketing",
+                    "value": "5"
+                },
+                {
+                    "title": "Finance",
+                    "value": "6"
+                },
+                {
+                    "title": "None of the above",
+                    "value": "7"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "OK"
+        }
+    ]
+}

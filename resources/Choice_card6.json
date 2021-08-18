@@ -1,0 +1,41 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "id": "CompactSelectVal",
+            "style": "expanded",
+            "isRequired": true,
+            "placeholder": "Please choose",
+            "choices": [
+                {
+                    "title": "I like giving presentations",
+                    "value": "1"
+                },
+                {
+                    "title": "I like qualitative work more than the quantitative one",
+                    "value": "2"
+                },
+                {
+                    "title": "I am good at managing data and information",
+                    "value": "3"
+                },
+                {
+                    "title": "I have an eye for detail",
+                    "value": "4"
+                }
+            ],
+            "label": "What is your strength?",
+            "isMultiSelect": true,
+            "errorMessage": "Please select any one of the option"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "OK"
+        }
+    ]
+}

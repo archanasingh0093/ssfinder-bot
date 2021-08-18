@@ -1,0 +1,40 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "id": "CompactSelectVal",
+            "style": "compact",
+            "isRequired": true,
+            "errorMessage": "This is a required input",
+            "placeholder": "Please choose",
+            "choices": [
+                {
+                    "title": "I go to the gym",
+                    "value": "1"
+                },
+                {
+                    "title": "I like doing volunteer work",
+                    "value": "2"
+                },
+                {
+                    "title": "I like doing household work and home improvement",
+                    "value": "3"
+                },
+                {
+                    "title": "I like learning, creating art forms, music and designing",
+                    "value": "4"
+                }
+            ],
+            "label": "What do you like to do outside of your work?"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "OK"
+        }
+    ]
+}

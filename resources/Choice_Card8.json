@@ -1,0 +1,40 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "id": "CompactSelectVal",
+            "style": "compact",
+            "isRequired": true,
+            "errorMessage": "This is a required input",
+            "placeholder": "Please choose",
+            "choices": [
+                {
+                    "title": "Social Science",
+                    "value": "1"
+                },
+                {
+                    "title": "Language",
+                    "value": "2"
+                },
+                {
+                    "title": "Science",
+                    "value": "3"
+                },
+                {
+                    "title": "Maths",
+                    "value": "4"
+                }
+            ],
+            "label": "And which subject did you like the most in school?"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "OK"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Input.ChoiceSet",
+            "id": "CompactSelectVal",
+            "style": "compact",
+            "isRequired": true,
+            "placeholder": "Please choose",
+            "choices": [
+                {
+                    "title": "Get a better job",
+                    "value": "1"
+                },
+                {
+                    "title": "Become an expert in the field so that market approaches me",
+                    "value": "2"
+                },
+                {
+                    "title": "Start my own business",
+                    "value": "3"
+                },
+                {
+                    "title": "Continue with family business",
+                    "value": "4"
+                },
+                {
+                    "title": "My interest",
+                    "value": "5"
+                },
+                {
+                    "title": "Wider range of career options",
+                    "value": "6"
+                },
+                {
+                    "title": "High earnings",
+                    "value": "7"
+                }
+            ],
+            "label": "Which of the following options are the most valuable to you when looking at the future?",
+            "isMultiSelect": true,
+            "errorMessage": "Please select one of the option"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "OK"
+        }
+    ]
+}
